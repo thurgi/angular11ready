@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  nodejs:
+    container_name: node
+    image: yarnpkg/node-yarn
+    volumes:
+      - ./:/opt/angular:rw
+    working_dir: /opt/angular
+    ports:
+      - "3000:3000"
+    # command: ["yarn", "start"]
+   command: ["tail", "-f", "/dev/null"]
+    networks:
+      niji:
+        ipv4_address: 172.20.0.2
+
+networks:
+  niji:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
