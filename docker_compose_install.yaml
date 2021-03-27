@@ -8,7 +8,4 @@ services:
       - ./app:/opt/angular:rw
       - ./.cache:/usr/local/share/.cache
     working_dir: /opt/angular
-    ports:
-      - 3000:3000
-    command: ["yarn", "start"]
-    # command: ['tail', '-f', '/dev/null']
+    command: ["yarn"]
