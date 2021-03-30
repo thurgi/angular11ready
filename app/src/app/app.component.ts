@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'app';
 
   constructor(private api: ApiService) {
-    LoggerService.log("kikou")
+    LoggerService.log('kikou');
     api.testInterceptor();
   }
 

@@ -8,11 +8,11 @@ export class LoggerService {
 
   constructor() { }
 
-  static error(...args: any):void{
+  static error(...args: any): void {
     console.error(...args);
   }
 
-  static log(...args: any):void{
+  static log(...args: any): void {
     if (!environment.production) {
       console.log(...args);
     }
