@@ -2,10 +2,10 @@ version: '3.4'
 
 services:
   nodejs:
-    container_name: node
-    image: davidkassa/yarn-angular-cli-firebase-tools
+    container_name: node_install
+    image: node:14.16
     volumes:
       - ./app:/opt/angular:rw
       - ./.cache:/usr/local/share/.cache
     working_dir: /opt/angular
-    command: ["yarn"]
+    command: ["yarn","install"]

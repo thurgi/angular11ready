@@ -3,12 +3,12 @@ version: '3.4'
 services:
   nodejs:
     container_name: node_dev
-    image: node:14.16
+    image: dapriotest/e2e-actorjava
     volumes:
       - ./app:/opt/angular:rw
       - ./.cache:/usr/local/share/.cache
     working_dir: /opt/angular
     ports:
       - 3000:3000
-    command: ["yarn", "start"]
+    command: ["yarn", "test"]
     # command: ['tail', '-f', '/dev/null']

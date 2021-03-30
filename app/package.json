@@ -4,21 +4,29 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "gs": "node node_modules/@angular/cli/bin/ng generate service",
+    "gi": "node node_modules/@angular/cli/bin/ng generate interceptor",
+    "gc": "node node_modules/@angular/cli/bin/ng generate component",
+    "gm": "node node_modules/@angular/cli/bin/ng generate module",
+    "serve": "node node_modules/@angular/cli/bin/ng serve",
+    "build": "node node_modules/@angular/cli/bin/ng build",
+    "test": "node node_modules/@angular/cli/bin/ng test",
+    "lint": "node node_modules/@angular/cli/bin/ng lint",
+    "e2e": "node node_modules/@angular/cli/bin/ng e2e"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~11.2.7",
+    "@angular/cdk": "^11.2.6",
     "@angular/common": "~11.2.7",
     "@angular/compiler": "~11.2.7",
     "@angular/core": "~11.2.7",
     "@angular/forms": "~11.2.7",
+    "@angular/material": "^11.2.6",
     "@angular/platform-browser": "~11.2.7",
     "@angular/platform-browser-dynamic": "~11.2.7",
     "@angular/router": "~11.2.7",
+    "@auth0/angular-jwt": "^5.0.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
